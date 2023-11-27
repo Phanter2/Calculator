@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqx6n3vcrosgq"]
+
+[sub_resource type="SystemFont" id="SystemFont_o02ew"]
+font_names = PackedStringArray("Arial")
+
+[node name="Calculator" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Screen" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -332.0
+offset_top = -593.0
+offset_right = 332.0
+offset_bottom = 607.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Screen"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AllComponentsContainer" type="VBoxContainer" parent="Screen/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DisplayContainer" type="VBoxContainer" parent="Screen/ColorRect/AllComponentsContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Screen/ColorRect/AllComponentsContainer/DisplayContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 150
+theme_override_constants/margin_right = 50
+
+[node name="PrevWorkArea" type="Label" parent="Screen/ColorRect/AllComponentsContainer/DisplayContainer/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_o02ew")
+theme_override_font_sizes/font_size = 30
+text = "8 x 10"
+horizontal_alignment = 2

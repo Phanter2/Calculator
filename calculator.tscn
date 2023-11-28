@@ -132,5 +132,13 @@ layout_mode = 2
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
+[node name="Button15" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button16" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
 [node name="BottomButtons" type="HBoxContainer" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
 layout_mode = 2

@@ -50,9 +50,87 @@ layout_mode = 2
 theme_override_constants/margin_top = 150
 theme_override_constants/margin_right = 50
 
-[node name="PrevWorkArea" type="Label" parent="Screen/ColorRect/AllComponentsContainer/DisplayContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen/ColorRect/AllComponentsContainer/DisplayContainer/MarginContainer"]
 layout_mode = 2
+
+[node name="PrevWorkArea" type="Label" parent="Screen/ColorRect/AllComponentsContainer/DisplayContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.662745, 0.662745, 0.662745, 1)
 theme_override_fonts/font = SubResource("SystemFont_o02ew")
 theme_override_font_sizes/font_size = 30
 text = "8 x 10"
 horizontal_alignment = 2
+
+[node name="WorkArea" type="Label" parent="Screen/ColorRect/AllComponentsContainer/DisplayContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.980392, 0.980392, 0.980392, 1)
+theme_override_fonts/font = SubResource("SystemFont_o02ew")
+theme_override_font_sizes/font_size = 90
+text = "80"
+horizontal_alignment = 2
+
+[node name="AllButtons" type="VBoxContainer" parent="Screen/ColorRect/AllComponentsContainer"]
+layout_mode = 2
+
+[node name="TopButtons" type="GridContainer" parent="Screen/ColorRect/AllComponentsContainer/AllButtons"]
+layout_mode = 2
+columns = 4
+
+[node name="Button" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button10" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button11" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button12" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button13" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="Button14" type="Button" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+
+[node name="BottomButtons" type="HBoxContainer" parent="Screen/ColorRect/AllComponentsContainer/AllButtons/TopButtons"]
+layout_mode = 2
